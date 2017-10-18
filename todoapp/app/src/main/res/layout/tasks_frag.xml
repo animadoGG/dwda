@@ -14,10 +14,10 @@
   ~ limitations under the License.
   -->
 
-<com.example.android.architecture.blueprints.todoapp.tasks.ScrollChildSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/refresh_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<com.giladgotman.dawandatask.tasks.ScrollChildSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                 android:id="@+id/refresh_layout"
+                                                                 android:layout_width="match_parent"
+                                                                 android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/tasksContainer"
@@ -82,5 +82,5 @@
 
         </LinearLayout>
     </RelativeLayout>
-</com.example.android.architecture.blueprints.todoapp.tasks.ScrollChildSwipeRefreshLayout>
+</com.giladgotman.dawandatask.tasks.ScrollChildSwipeRefreshLayout>
 
