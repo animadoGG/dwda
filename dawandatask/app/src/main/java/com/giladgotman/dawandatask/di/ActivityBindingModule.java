@@ -1,14 +1,15 @@
 package com.giladgotman.dawandatask.di;
 
-import com.giladgotman.dawandatask.addedittask.AddEditTaskModule;
 import com.giladgotman.dawandatask.addedittask.AddEditTaskActivity;
+import com.giladgotman.dawandatask.addedittask.AddEditTaskModule;
+import com.giladgotman.dawandatask.categories.CategoriesActivity;
+import com.giladgotman.dawandatask.categories.CategoriesModule;
 import com.giladgotman.dawandatask.statistics.StatisticsActivity;
 import com.giladgotman.dawandatask.statistics.StatisticsModule;
 import com.giladgotman.dawandatask.taskdetail.TaskDetailActivity;
 import com.giladgotman.dawandatask.taskdetail.TaskDetailPresenterModule;
 import com.giladgotman.dawandatask.tasks.TasksActivity;
 import com.giladgotman.dawandatask.tasks.TasksModule;
-
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
@@ -24,6 +25,10 @@ public abstract class ActivityBindingModule {
     @ActivityScoped
     @ContributesAndroidInjector(modules = TasksModule.class)
     abstract TasksActivity tasksActivity();
+
+    @ActivityScoped
+    @ContributesAndroidInjector(modules = CategoriesModule.class)
+    abstract CategoriesActivity categoriesActivity();
 
     @ActivityScoped
     @ContributesAndroidInjector(modules = AddEditTaskModule.class)
